@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+/* Custom Font - Helvetica */
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/fonts/helvetica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-primary: #c4a37f;
+  --color-secondary: #272727;
+  --font-family-helvetica: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Custom animations for carousel */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeIn 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+/* fadeInUp animation for ServicesSection */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Button shimmer effect */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.button-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.button-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s;
+}
+
+.button-shimmer:hover::before {
+  transform: translateX(100%);
+}
+
+/* Ensure button hover effects work during carousel transitions */
+.button-shimmer {
+  transition: all 0.3s ease !important;
+}
+
+.button-shimmer:hover {
+  transform: scale(1.05) !important;
+}
+
+/* Line clamp utility for paragraph text */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+
+/* Apply Helvetica as default font for entire application */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
