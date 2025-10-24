@@ -1,55 +1,15 @@
 import React from 'react';
-import { FaBuilding, FaHome, FaIndustry, FaUniversity, FaSeedling } from 'react-icons/fa';
-import Button from '../../../components/ui/Button';
-import SectionHeader from '../../../components/ui/SectionHeader';
+import Button from '@components/ui/Button';
+import SectionHeader from '@components/ui/SectionHeader';
+import Section from '@components/ui/Section';
+import { servicesData } from '@data/servicesData';
 
 const ServicesSection = () => {
-  const services = [
-    {
-      title: "Residential",
-      description: "Creating modern, sustainable living spaces that blend comfort with innovation. We design residential communities that prioritize quality of life and environmental responsibility.",
-      icon: FaHome,
-      color: "from-blue-500 to-blue-600",
-      bgColor: "bg-blue-50",
-      textColor: "text-blue-600"
-    },
-    {
-      title: "Institutional",
-      description: "Building educational and healthcare facilities that serve communities. Our institutional projects focus on creating spaces that enhance learning and healing experiences.",
-      icon: FaUniversity,
-      color: "from-green-500 to-green-600",
-      bgColor: "bg-green-50",
-      textColor: "text-green-600"
-    },
-    {
-      title: "Industrial",
-      description: "Developing state-of-the-art industrial facilities and business parks. We create efficient, sustainable industrial spaces that drive economic growth and innovation.",
-      icon: FaIndustry,
-      color: "from-orange-500 to-orange-600",
-      bgColor: "bg-orange-50",
-      textColor: "text-orange-600"
-    },
-    {
-      title: "Agricultural",
-      description: "Developing state-of-the-art agricultural facilities and business parks. We create efficient, sustainable agricultural spaces that drive economic growth and innovation.",
-      icon: FaSeedling,
-      color: "from-green-500 to-green-600",
-      bgColor: "bg-green-50",
-      textColor: "text-green-600"
-    },
-   
-  ];
-
   return (
-    <section className="py-24 bg-linear-to-br from-gray-50 to-white relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-green-500 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-purple-500 rounded-full blur-3xl"></div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <Section 
+      className="py-24 bg-linear-to-br from-gray-50 to-white"
+      backgroundVariant="default"
+    >
         {/* Section Header */}
         <SectionHeader
           subtitle="What We Excel At"
@@ -60,7 +20,7 @@ const ServicesSection = () => {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => {
+          {servicesData.map((service, index) => {
             const IconComponent = service.icon;
             return (
               <div 
@@ -105,8 +65,7 @@ const ServicesSection = () => {
             Explore Our Expertise
           </Button>
         </div>
-      </div>
-    </section>
+    </Section>
   );
 };
 

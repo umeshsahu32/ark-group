@@ -1,33 +1,17 @@
 import React, { useState } from "react";
-import SectionHeader from "../../../components/ui/SectionHeader";
-import Button from "../../../components/ui/Button";
-import { FaGraduationCap, FaHospital, FaHandsHelping } from "react-icons/fa";
-
-// Import foundation images
-import foundation1 from "../../../assets/foundation/foundation-1.jpg";
-import foundation2 from "../../../assets/foundation/foundation-2.jpg";
-import foundation3 from "../../../assets/foundation/foundation-3.jpg";
+import SectionHeader from "@components/ui/SectionHeader";
+import Button from "@components/ui/Button";
+import Section from "@components/ui/Section";
+import OptimizedImage from "@components/ui/OptimizedImage";
+import { 
+  foundationImages, 
+  foundationStats, 
+  foundationInitiatives, 
+  foundationContent 
+} from "@data/arkFoundationData";
 
 const ArkFoundation = () => {
   const [hoveredImage, setHoveredImage] = useState(null);
-
-  const foundationImages = [
-    {
-      id: 1,
-      image: foundation1,
-      alt: "Community Development Initiative",
-    },
-    {
-      id: 2,
-      image: foundation2,
-      alt: "Educational Support Program",
-    },
-    {
-      id: 3,
-      image: foundation3,
-      alt: "Healthcare Access Project",
-    },
-  ];
 
   const handleImageHover = (imageId) => {
     setHoveredImage(imageId);
@@ -38,15 +22,11 @@ const ArkFoundation = () => {
   };
 
   return (
-    <section className="py-12 bg-linear-to-br from-blue-50 to-purple-50 relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 right-10 w-40 h-40 bg-blue-600 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-10 w-32 h-32 bg-purple-600 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-green-600 rounded-full blur-3xl"></div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <Section 
+      className="py-12 bg-linear-to-br from-blue-50 to-purple-50"
+      backgroundVariant="default"
+      backgroundOpacity="opacity-10"
+    >
         {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mt-20">
           {/* Left Side - Stacked Images */}
@@ -65,12 +45,13 @@ const ArkFoundation = () => {
                 onTouchStart={() => handleImageHover(1)}
                 onTouchEnd={handleImageLeave}
               >
-                <img
+                <OptimizedImage
                   src={foundationImages[0].image}
                   alt={foundationImages[0].alt}
                   className="w-full h-full object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
               </div>
 
               {/* Second Image (Middle) */}
@@ -85,10 +66,11 @@ const ArkFoundation = () => {
                 onTouchStart={() => handleImageHover(2)}
                 onTouchEnd={handleImageLeave}
               >
-                <img
+                <OptimizedImage
                   src={foundationImages[1].image}
                   alt={foundationImages[1].alt}
                   className="w-full h-full object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
               </div>
@@ -105,10 +87,11 @@ const ArkFoundation = () => {
                 onTouchStart={() => handleImageHover(3)}
                 onTouchEnd={handleImageLeave}
               >
-                <img
+                <OptimizedImage
                   src={foundationImages[2].image}
                   alt={foundationImages[2].alt}
                   className="w-full h-full object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
               </div>
@@ -126,27 +109,18 @@ const ArkFoundation = () => {
             </div>
 
             {/* Floating Stats */}
-            <div className="absolute bottom-4 left-4 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 z-40">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary mb-1">
-                  500+
-                </div>
-                <div className="text-xs text-secondary font-bold">
-                  Lives Impacted
-                </div>
-              </div>
-            </div>
-
-            <div className="absolute top-4 right-1 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 z-40">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary mb-1">
-                  25+
-                </div>
-                <div className="text-xs text-secondary font-bold">
-                  Projects
+            {foundationStats.map((stat, index) => (
+              <div key={index} className={`absolute ${stat.position} bg-white rounded-2xl p-4 shadow-xl border border-gray-100 z-40`}>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-primary mb-1">
+                    {stat.number}
+                  </div>
+                  <div className="text-xs text-secondary font-bold">
+                    {stat.label}
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
 
           {/* Right Side - Content */}
@@ -160,49 +134,16 @@ const ArkFoundation = () => {
 
             {/* Description */}
             <div className="space-y-6">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Through the Ark Foundation, we are committed to creating lasting
-                positive change in communities across the region. Our
-                initiatives focus on three core pillars that drive sustainable
-                development and social progress.
-              </p>
-
-              <p className="text-lg text-gray-700 leading-relaxed">
-                We believe that every individual deserves access to quality
-                education, healthcare, and opportunities for growth. Our
-                foundation works tirelessly to bridge gaps, empower communities,
-                and create a brighter future for all.
-              </p>
+              {foundationContent.description.map((paragraph, index) => (
+                <p key={index} className="text-lg text-gray-700 leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
             </div>
 
             {/* Key Initiatives */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              {[
-                {
-                  icon: FaGraduationCap,
-                  title: "Education",
-                  description:
-                    "Scholarship programs and school infrastructure development",
-                  color: "from-blue-500 to-blue-600",
-                  bgColor: "bg-blue-50",
-                },
-                {
-                  icon: FaHospital,
-                  title: "Healthcare",
-                  description:
-                    "Medical camps and healthcare facility improvements",
-                  color: "from-green-500 to-green-600",
-                  bgColor: "bg-green-50",
-                },
-                {
-                  icon: FaHandsHelping,
-                  title: "Community",
-                  description:
-                    "Social welfare and community development initiatives",
-                  color: "from-purple-500 to-purple-600",
-                  bgColor: "bg-purple-50",
-                },
-              ].map((initiative, index) => {
+              {foundationInitiatives.map((initiative, index) => {
                 const IconComponent = initiative.icon;
                 return (
                   <div
@@ -267,8 +208,7 @@ const ArkFoundation = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+    </Section>
   );
 };
 

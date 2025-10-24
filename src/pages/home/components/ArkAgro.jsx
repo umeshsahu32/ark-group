@@ -1,78 +1,16 @@
 import React from "react";
-import SectionHeader from "../../../components/ui/SectionHeader";
-import Button from "../../../components/ui/Button";
-import { FaAppleAlt, FaCarrot, FaSeedling, FaLeaf } from "react-icons/fa";
-
-// Import product images
-import fruitsImage from "../../../assets/ark-agro/ark-agro-1.jpg";
-import vegetablesImage from "../../../assets/ark-agro/ark-agro-2.jpg";
-import cropsImage from "../../../assets/ark-agro/ark-agro-3.jpg";
-import gheeImage from "../../../assets/ark-agro/ark-agro-4.jpg";
-
-// vegetablesImage
+import SectionHeader from "@components/ui/SectionHeader";
+import Button from "@components/ui/Button";
+import Section from "@components/ui/Section";
+import OptimizedImage from "@components/ui/OptimizedImage";
+import { arkAgroProducts, arkAgroMission } from "@data/arkAgroData";
 
 const ArkAgro = () => {
-  const products = [
-    {
-      id: 1,
-      name: "ArkD3 Pure Gir Cow Ghee",
-      description: "Premium quality ghee made from pure Gir cow milk, rich in nutrients and traditional goodness",
-      image: gheeImage,
-      icon: FaSeedling,
-      color: "from-yellow-500 to-orange-500",
-      bgColor: "bg-yellow-50",
-      textColor: "text-yellow-600",
-      featured: true,
-      benefits: ["Pure Gir Cow Milk", "Traditional Process", "Rich in Nutrients", "Premium Quality"]
-    },
-    {
-      id: 2,
-      name: "Fresh Fruits",
-      description: "Seasonal fruits grown with natural farming methods, packed with vitamins and minerals",
-      image: fruitsImage,
-      icon: FaAppleAlt,
-      color: "from-red-500 to-pink-500",
-      bgColor: "bg-red-50",
-      textColor: "text-red-600",
-      featured: false,
-      benefits: ["Natural Farming", "Seasonal Variety", "Rich in Vitamins", "Fresh Daily"]
-    },
-    {
-      id: 3,
-      name: "Organic Vegetables",
-      description: "Fresh vegetables grown without harmful chemicals, ensuring maximum nutrition and taste",
-      image: vegetablesImage,
-      icon: FaCarrot,
-      color: "from-green-500 to-emerald-500",
-      bgColor: "bg-green-50",
-      textColor: "text-green-600",
-      featured: false,
-      benefits: ["Chemical Free", "Maximum Nutrition", "Fresh Harvest", "Natural Taste"]
-    },
-    {
-      id: 4,
-      name: "Seasonal Crops",
-      description: "Traditional seasonal crops grown using sustainable farming practices for optimal yield",
-      image: cropsImage,
-      icon: FaLeaf,
-      color: "from-blue-500 to-cyan-500",
-      bgColor: "bg-blue-50",
-      textColor: "text-blue-600",
-      featured: false,
-      benefits: ["Sustainable Farming", "Seasonal Variety", "Optimal Yield", "Traditional Methods"]
-    }
-  ];
-
   return (
-    <section className="py-20 bg-linear-to-br from-green-50 to-yellow-50 relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-green-600 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-yellow-600 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-orange-600 rounded-full blur-3xl"></div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <Section 
+      className="bg-linear-to-br from-green-50 to-yellow-50"
+      backgroundVariant="agro"
+    >
         {/* Section Header */}
         <SectionHeader
           subtitle="Farm Fresh Excellence"
@@ -101,7 +39,7 @@ const ArkAgro = () => {
                   Rich in nutrients and packed with the goodness of authentic Indian ghee.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mb-6">
-                  {products[0].benefits.map((benefit, index) => (
+                  {arkAgroProducts[0].benefits.map((benefit, index) => (
                     <div key={index} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
                       <span className="text-sm text-gray-700 font-medium">{benefit}</span>
@@ -119,12 +57,13 @@ const ArkAgro = () => {
               </div>
               <div className="order-1 lg:order-2">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-3xl transform rotate-3"></div>
+                  <div className="absolute inset-0 bg-linear-to-r from-yellow-400 to-orange-400 rounded-3xl transform rotate-3"></div>
                   <div className="relative bg-white rounded-3xl p-4 shadow-xl">
-                    <img
-                      src={products[0].image}
-                      alt={products[0].name}
+                    <OptimizedImage
+                      src={arkAgroProducts[0].image}
+                      alt={arkAgroProducts[0].name}
                       className="w-full h-80 object-cover rounded-2xl"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                     <div className="absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       Featured
@@ -138,7 +77,7 @@ const ArkAgro = () => {
 
         {/* Other Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.slice(1).map((product, index) => {
+          {arkAgroProducts.slice(1).map((product, index) => {
             const IconComponent = product.icon;
             return (
               <div
@@ -147,10 +86,11 @@ const ArkAgro = () => {
               >
                 {/* Product Image */}
                 <div className="relative mb-6 overflow-hidden rounded-2xl">
-                  <img
+                  <OptimizedImage
                     src={product.image}
                     alt={product.name}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
                   
@@ -187,10 +127,7 @@ const ArkAgro = () => {
             );
           })}
         </div>
-
-     
-      </div>
-    </section>
+    </Section>
   );
 };
 
