@@ -41,7 +41,7 @@ const OurClient = () => {
         cancelAnimationFrame(animationId);
       }
     };
-  }, [isPaused, clients.length]);
+  }, [isPaused, clientsData.length]);
 
   // Handle mouse enter
   const handleMouseEnter = () => {
