@@ -29,7 +29,7 @@ const ManagementTeam = () => {
   };
 
   return (
-    <Section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <Section className="py-12 sm:py-16 lg:py-20 bg-linear-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Background Elements */}
       <BackgroundElements
         variant="minimal"
@@ -74,7 +74,7 @@ const ManagementTeam = () => {
                         alt={member.name}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                      <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent"></div>
 
                       {/* LinkedIn Button */}
                       <div className="absolute top-4 right-4">
@@ -107,7 +107,7 @@ const ManagementTeam = () => {
                         </div>
 
                         {/* Gradient Fade */}
-                        <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+                        <div className="absolute bottom-0 left-0 right-0 h-6 bg-linear-to-t from-white to-transparent pointer-events-none"></div>
                       </div>
 
                       {/* Read More Button */}
@@ -152,7 +152,7 @@ const ManagementTeam = () => {
 
             {/* Bottom Decorative Element */}
             <div className="flex justify-center mt-12">
-              <div className="w-32 h-1 bg-gradient-to-r from-transparent via-secondary to-transparent rounded-full"></div>
+              <div className="w-32 h-1 bg-linear-to-r from-transparent via-secondary to-transparent rounded-full"></div>
             </div>
           </div>
         </div>

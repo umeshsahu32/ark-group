@@ -1,64 +1,65 @@
-import { FaAppleAlt, FaCarrot, FaSeedling, FaLeaf } from "react-icons/fa";
+export const arkAgroIntroData = {
+  missionStatement: "To produce high-quality and nutritious produce while also preserving the soil for future generations.",
+  commitmentStatement: "At Ark Agro, we are committed to sustainability and environmental conservation, using innovative techniques to cultivate crops without using harmful chemicals or synthetic fertilizers.",
+  keyFeatures: [
+    {
+      title: "Chemical-Free",
+      icon: "FaLeaf",
+      description: "No harmful chemicals or synthetic fertilizers"
+    },
+    {
+      title: "Sustainable",
+      icon: "FaRecycle", 
+      description: "Environmental conservation and innovative techniques"
+    }
+  ]
+};
 
-// Import product images
-import fruitsImage from "@assets/ark-agro/ark-agro-1.jpg";
-import vegetablesImage from "@assets/ark-agro/ark-agro-2.jpg";
-import cropsImage from "@assets/ark-agro/ark-agro-3.jpg";
-import gheeImage from "@assets/ark-agro/ark-agro-4.jpg";
-
-export const arkAgroProducts = [
-  {
-    id: 1,
-    name: "ArkD3 Pure Gir Cow Ghee",
-    description: "Premium quality ghee made from pure Gir cow milk, rich in nutrients and traditional goodness",
-    image: gheeImage,
-    icon: FaSeedling,
-    color: "from-yellow-500 to-orange-500",
-    bgColor: "bg-yellow-50",
-    textColor: "text-yellow-600",
-    featured: true,
-    benefits: ["Pure Gir Cow Milk", "Traditional Process", "Rich in Nutrients", "Premium Quality"]
-  },
-  {
-    id: 2,
-    name: "Fresh Fruits",
-    description: "Seasonal fruits grown with natural farming methods, packed with vitamins and minerals",
-    image: fruitsImage,
-    icon: FaAppleAlt,
-    color: "from-red-500 to-pink-500",
-    bgColor: "bg-red-50",
-    textColor: "text-red-600",
-    featured: false,
-    benefits: ["Natural Farming", "Seasonal Variety", "Rich in Vitamins", "Fresh Daily"]
-  },
-  {
-    id: 3,
-    name: "Organic Vegetables",
-    description: "Fresh vegetables grown without harmful chemicals, ensuring maximum nutrition and taste",
-    image: vegetablesImage,
-    icon: FaCarrot,
-    color: "from-green-500 to-emerald-500",
-    bgColor: "bg-green-50",
-    textColor: "text-green-600",
-    featured: false,
-    benefits: ["Chemical Free", "Maximum Nutrition", "Fresh Harvest", "Natural Taste"]
-  },
-  {
-    id: 4,
-    name: "Seasonal Crops",
-    description: "Traditional seasonal crops grown using sustainable farming practices for optimal yield",
-    image: cropsImage,
-    icon: FaLeaf,
-    color: "from-blue-500 to-cyan-500",
-    bgColor: "bg-blue-50",
-    textColor: "text-blue-600",
-    featured: false,
-    benefits: ["Sustainable Farming", "Seasonal Variety", "Optimal Yield", "Traditional Methods"]
-  }
-];
-
-export const arkAgroMission = {
-  title: "Ark Agro's Mission",
-  description: "To produce high-quality and nutritious produce while also preserving the soil for future generations. Our fresh & healthy produce includes fruits, vegetables and seasonal crops.",
-  featuredProduct: "ArkD3 Pure Gir Cow Ghee"
+export const arkAgroProduceData = {
+  fruits: [
+    'Sweet Oranges', 'Sapota', 'Mango', 'Guava', 'Coconut', 
+    'Amla', 'Musk Melon', 'Watermelon', 'Lemon'
+  ],
+  vegetables: [
+    'Tomatoes', 'Brinjal', 'Chilli', 'Cluster Beans', 'Ladies\' Finger', 
+    'Beans', 'Potatoes', 'Bitter Gourd', 'Bottle Gourd', 'Ridge Gourd', 
+    'Cucumber', 'Cabbage', 'Cauliflower', 'Carrots', 'Beetroot'
+  ],
+  greens: [
+    'Spinach', 'Amaranthus', 'Hibiscus (Gongura)', 'Coriander'
+  ],
+  seasonalCrops: [
+    'Paddy', 'Wheat', 'Maize', 'Jowar', 'Pearl Millet', 'Finger Millet', 
+    'Foxtail Millet', 'Red Gram', 'Green Gram', 'Black Gram', 'Horse Gram', 
+    'Bengal Gram', 'Safflower', 'Sunflower', 'Groundnut', 'Sesamum', 'Mustard'
+  ],
+  farmingPractices: [
+    {
+      id: 1,
+      title: 'Soil Conditioning & Plant Nutrition',
+      description: 'We use Jeevamrutham, Gana Jeevamrutham, Azotobacter, Rhizobium, PSB-Bacteria, and KMB-Potash Mobilising Bacteria to avoid the use of harmful urea and enhance soil health and plant nutrition.',
+      icon: 'FaSeedling',
+      color: 'from-green-500 to-emerald-500',
+      bgColor: 'bg-green-50',
+      borderColor: 'border-green-200'
+    },
+    {
+      id: 2,
+      title: 'Fungus Control',
+      description: 'By employing Trichoderma and Pseudomonas, we effectively combat harmful fungi such as root rot, ensuring the well-being of our crops.',
+      icon: 'FaLeaf',
+      color: 'from-emerald-500 to-green-500',
+      bgColor: 'bg-emerald-50',
+      borderColor: 'border-emerald-200'
+    },
+    {
+      id: 3,
+      title: 'Oriental Herbal Nutrition',
+      description: 'Our plants receive the benefits of natural nutrients through Fish Amine Acids (FAA) and Fermented Fruit Juice (FFJ), boosting their growth and quality.',
+      icon: 'FaHeart',
+      color: 'from-green-600 to-emerald-600',
+      bgColor: 'bg-green-100',
+      borderColor: 'border-green-300'
+    }
+  ]
 };

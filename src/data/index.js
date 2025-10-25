@@ -13,6 +13,9 @@ export { heroCarouselData } from './heroData';
 export { aboutUsStats, aboutUsContent } from './aboutUsData';
 export { arkVisionData } from './arkVisionData';
 export { managementTeamData } from './managementTeamData';
+export { arkAgroIntroData, arkAgroProduceData } from './arkAgroData';
+export { arkGaushalaData } from './arkGaushalaData';
+export { arkD3GheeData } from './arkD3GheeData';
 
 // You can also create combined exports if needed
 export const allData = {

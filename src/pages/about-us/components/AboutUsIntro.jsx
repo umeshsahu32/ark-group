@@ -36,11 +36,11 @@ const AboutUsIntro = () => {
 
             {/* Key Highlights */}
             <div className="grid grid-cols-2 gap-6 pt-8">
-              <div className="text-center p-6 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl border border-primary/10">
+              <div className="text-center p-6 bg-linear-to-br from-primary/5 to-secondary/5 rounded-xl border border-primary/10">
                 <div className="text-3xl font-bold text-primary mb-2">36+</div>
                 <div className="text-sm text-gray-600 font-medium">Years Experience</div>
               </div>
-              <div className="text-center p-6 bg-gradient-to-br from-secondary/5 to-primary/5 rounded-xl border border-secondary/10">
+              <div className="text-center p-6 bg-linear-to-br from-secondary/5 to-primary/5 rounded-xl border border-secondary/10">
                 <div className="text-3xl font-bold text-secondary mb-2">2</div>
                 <div className="text-sm text-gray-600 font-medium">Major Cities</div>
               </div>
@@ -70,9 +70,9 @@ const AboutUsIntro = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full px-8 py-4 border border-primary/20">
+          <div className="inline-flex items-center space-x-4 bg-linear-to-r from-primary/10 to-secondary/10 rounded-full px-8 py-4 border border-primary/20">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span className="text-gray-700 font-medium">Trusted by clients across Hyderabad & Bengaluru</span>
+            <span className="text-gray-700 font-medium">Trusted by clients across Hyderabad & Bangalore</span>
             <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
           </div>
         </div>

@@ -9,7 +9,7 @@ const ArkVision = () => {
   const { missionStatement, visionStatement, visionPillars, stats, quote, images } = arkVisionData;
 
   return (
-    <Section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-slate-50 to-gray-100 relative overflow-hidden">
+    <Section className="py-12 sm:py-16 lg:py-20 bg-linear-to-br from-slate-50 to-gray-100 relative overflow-hidden">
       {/* Background Decorative Elements */}
       <BackgroundElements 
         variant="minimal" 
