@@ -1,9 +1,12 @@
-const ContactUs = ()=>{
-    return (
-      <div>
-        <h1>Contact Us</h1>
-      </div>
-    )
-  }
-  
-  export default ContactUs;
+import React from 'react';
+import ContactUsBanner from './components/ContactUsBanner';
+
+const ContactUs = () => {
+  return (
+    <div className="min-h-screen">
+      <ContactUsBanner />
+    </div>
+  );
+};
+
+export default ContactUs;

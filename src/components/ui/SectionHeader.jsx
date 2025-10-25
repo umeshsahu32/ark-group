@@ -25,13 +25,13 @@ const SectionHeader = ({
         <h2 className={`text-4xl sm:text-5xl md:text-6xl font-bold ${titleColor} mb-6 leading-tight`}>
           {title}
           {titleAccent && (
-            <span className={`text-transparent bg-clip-text bg-linear-to-r ${accentGradient}`}>
+            <span className={`text-transparent bg-clip-text bg-gradient-to-r ${accentGradient}`}>
           {' '}{titleAccent}
             </span>
           )}
         </h2>
         
-        <div className={`w-16 sm:w-20 md:w-24 h-1 bg-linear-to-r ${dividerColor} mx-auto rounded-full`}></div>
+        <div className={`w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r ${dividerColor} mx-auto rounded-full`}></div>
       </div>
       
       {description && (

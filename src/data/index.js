@@ -11,6 +11,8 @@ export {
 } from './arkFoundationData';
 export { heroCarouselData } from './heroData';
 export { aboutUsStats, aboutUsContent } from './aboutUsData';
+export { arkVisionData } from './arkVisionData';
+export { managementTeamData } from './managementTeamData';
 
 // You can also create combined exports if needed
 export const allData = {

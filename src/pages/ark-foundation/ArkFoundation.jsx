@@ -1,9 +1,12 @@
-const ArkFoundation = ()=>{
-    return (
-      <div>
-        <h1>Ark Foundation</h1>
-      </div>
-    )
-  }
-  
-  export default ArkFoundation;
+import React from 'react';
+import ArkFoundationBanner from './components/ArkFoundationBanner';
+
+const ArkFoundation = () => {
+  return (
+    <div className="min-h-screen">
+      <ArkFoundationBanner />
+    </div>
+  );
+};
+
+export default ArkFoundation;

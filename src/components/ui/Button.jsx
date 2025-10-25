@@ -18,7 +18,7 @@ const Button = ({
   
   // Variant styles
   const variants = {
-    primary: 'bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-2xl focus:ring-primary/50 button-shimmer',
+    primary: 'bg-primary hover:bg-primary/90 text-[#2f2f2f] shadow-lg hover:shadow-2xl focus:ring-primary/50 button-shimmer',
     secondary: 'bg-secondary hover:bg-secondary/90 text-white shadow-md hover:shadow-lg focus:ring-secondary/50',
     outline: 'bg-transparent hover:bg-primary/10 text-primary border-2 border-primary hover:border-primary/80 focus:ring-primary/50',
     ghost: 'bg-transparent hover:bg-gray-100 text-gray-700 focus:ring-gray-500',

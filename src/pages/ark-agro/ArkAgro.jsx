@@ -1,9 +1,12 @@
-const ArkAgro = ()=>{
-    return (
-      <div>
-        <h1>Ark Agro</h1>
-      </div>
-    )
-  }
+import React from 'react';
+import ArkAgroBanner from './components/ArkAgroBanner';
+
+const ArkAgro = () => {
+  return (
+    <div className="min-h-screen">
+      <ArkAgroBanner />
+    </div>
+  );
+};
   
   export default ArkAgro;
