@@ -1,3 +1,8 @@
+import gheeImage from "@assets/ark-agro/ark-agro-4.jpg";
+import fruitsImage from "@assets/ark-agro/ark-agro-1.jpg";
+import vegetablesImage from "@assets/ark-agro/ark-agro-2.jpg";
+import cropsImage from "@assets/ark-agro/ark-agro-3.jpg";
+
 export const arkAgroIntroData = {
   missionStatement: "To produce high-quality and nutritious produce while also preserving the soil for future generations.",
   commitmentStatement: "At Ark Agro, we are committed to sustainability and environmental conservation, using innovative techniques to cultivate crops without using harmful chemicals or synthetic fertilizers.",
@@ -72,7 +77,7 @@ export const arkAgroProducts = [
     id: 1,
     name: "ArkD3 Pure Gir Cow Ghee",
     description: "Our signature product made from pure Gir cow milk using traditional methods. Rich in nutrients and packed with the goodness of authentic Indian ghee.",
-    image: "/assets/ark-agro/arkd3-3.webp",
+    image: gheeImage,
     benefits: ["365-Year Lineage", "Vitamin D3 Enriched", "Pure & Natural", "Glass Packaging"],
     icon: "FaStar",
     color: "from-yellow-500 to-amber-500",
@@ -83,7 +88,7 @@ export const arkAgroProducts = [
     id: 2,
     name: "Fresh Organic Fruits",
     description: "Naturally grown fruits including Sweet Oranges, Sapota, Mango, Guava, Coconut, Amla, Musk Melon, Watermelon, and Lemon.",
-    image: "/assets/ark-agro/ark-agro-3.jpg",
+    image: fruitsImage,
     benefits: ["Chemical-Free", "Nutrient-Rich", "Fresh Daily", "Organic Certified"],
     icon: "FaAppleAlt",
     color: "from-orange-500 to-red-500",
@@ -94,11 +99,23 @@ export const arkAgroProducts = [
     id: 3,
     name: "Fresh Organic Vegetables",
     description: "A wide variety of fresh vegetables including Tomatoes, Brinjal, Chilli, Cluster Beans, Ladies' Finger, Beans, Potatoes, and more.",
-    image: "/assets/ark-agro/ark-agro-5.jpg",
+    image: vegetablesImage,
     benefits: ["Pesticide-Free", "Farm Fresh", "Nutritious", "Sustainable"],
     icon: "FaCarrot",
     color: "from-green-500 to-emerald-500",
     bgColor: "bg-green-100",
     textColor: "text-green-600"
+  },
+  {
+    id: 4,
+    name: "Seasonal Crops",
+    description: "Traditional seasonal crops grown using sustainable farming practices for optimal yield",
+    image: cropsImage,
+    icon: "FaLeaf",
+    color: "from-blue-500 to-cyan-500",
+    bgColor: "bg-blue-50",
+    textColor: "text-blue-600",
+    featured: false,
+    benefits: ["Sustainable Farming", "Seasonal Variety", "Optimal Yield", "Traditional Methods"]
   }
 ];

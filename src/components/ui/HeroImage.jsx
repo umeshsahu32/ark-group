@@ -24,9 +24,9 @@ const HeroImage = ({
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
         
         {/* Overlay Content */}
-        <div className="absolute bottom-8 left-8 right-8 text-white">
+        <div className="absolute bottom-2 left-8 right-8 text-white">
           <div className="max-w-4xl">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-4xl font-bold mb-2">
               {title}
               {subtitle && (
                 <span className={`bg-gradient-to-r ${gradientFrom} ${gradientTo} bg-clip-text text-transparent`}>

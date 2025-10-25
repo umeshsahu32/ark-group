@@ -7,7 +7,8 @@ export {
   foundationImages, 
   foundationStats, 
   foundationInitiatives, 
-  foundationContent 
+  foundationContent,
+  beneficiariesData
 } from './arkFoundationData';
 export { heroCarouselData } from './heroData';
 export { aboutUsStats, aboutUsContent } from './aboutUsData';
