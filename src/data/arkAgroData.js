@@ -63,3 +63,42 @@ export const arkAgroProduceData = {
     }
   ]
 };
+
+// Backward compatibility exports for home page
+export const arkAgroMission = arkAgroIntroData.missionStatement;
+
+export const arkAgroProducts = [
+  {
+    id: 1,
+    name: "ArkD3 Pure Gir Cow Ghee",
+    description: "Our signature product made from pure Gir cow milk using traditional methods. Rich in nutrients and packed with the goodness of authentic Indian ghee.",
+    image: "/assets/ark-agro/arkd3-3.webp",
+    benefits: ["365-Year Lineage", "Vitamin D3 Enriched", "Pure & Natural", "Glass Packaging"],
+    icon: "FaStar",
+    color: "from-yellow-500 to-amber-500",
+    bgColor: "bg-yellow-100",
+    textColor: "text-yellow-600"
+  },
+  {
+    id: 2,
+    name: "Fresh Organic Fruits",
+    description: "Naturally grown fruits including Sweet Oranges, Sapota, Mango, Guava, Coconut, Amla, Musk Melon, Watermelon, and Lemon.",
+    image: "/assets/ark-agro/ark-agro-3.jpg",
+    benefits: ["Chemical-Free", "Nutrient-Rich", "Fresh Daily", "Organic Certified"],
+    icon: "FaAppleAlt",
+    color: "from-orange-500 to-red-500",
+    bgColor: "bg-orange-100",
+    textColor: "text-orange-600"
+  },
+  {
+    id: 3,
+    name: "Fresh Organic Vegetables",
+    description: "A wide variety of fresh vegetables including Tomatoes, Brinjal, Chilli, Cluster Beans, Ladies' Finger, Beans, Potatoes, and more.",
+    image: "/assets/ark-agro/ark-agro-5.jpg",
+    benefits: ["Pesticide-Free", "Farm Fresh", "Nutritious", "Sustainable"],
+    icon: "FaCarrot",
+    color: "from-green-500 to-emerald-500",
+    bgColor: "bg-green-100",
+    textColor: "text-green-600"
+  }
+];
