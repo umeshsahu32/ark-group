@@ -1,9 +1,14 @@
-const Careers = ()=>{
-    return (
-      <div>
-        <h1>Careers</h1>
-      </div>
-    )
-  }
-  
-  export default Careers;
+import React from 'react';
+import CareersBanner from './components/CareersBanner';
+import JobOpenings from './components/JobOpenings';
+
+const Careers = () => {
+  return (
+    <div className="min-h-screen">
+      <CareersBanner />
+      <JobOpenings />
+    </div>
+  );
+};
+
+export default Careers;

@@ -7,7 +7,7 @@ const ContactUsBanner = () => {
       title="Get In"
       subtitle="Touch"
       description="Ready to start your next project? Contact us today and let's discuss how we can bring your vision to life."
-      backgroundColor="indigo"
+      backgroundColor="primary"
       accentColor="secondary"
       showScrollIndicator={true}
     />
