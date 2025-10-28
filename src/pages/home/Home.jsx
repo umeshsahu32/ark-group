@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from './components/HeroSection';
 import ServicesSection from './components/ServicesSection';
 import AboutUs from './components/AboutUs';
-import OngoingProjects from './components/OngoingProjects';
+import HomeProjectSection from './components/HomeProjectSection';
 import OurClient from './components/OurClient';
 import ArkFoundation from './components/ArkFoundation';
 import ArkAgro from './components/ArkAgro';
@@ -12,7 +12,7 @@ const Home = () => {
     <div>
       <HeroSection />
       <AboutUs />
-      <OngoingProjects />
+      <HomeProjectSection />
       <ServicesSection />
       <OurClient />
       <ArkFoundation />

@@ -3,9 +3,9 @@ import Button from '@components/ui/Button';
 import SectionHeader from '@components/ui/SectionHeader';
 import Section from '@components/ui/Section';
 import OptimizedImage from '@components/ui/OptimizedImage';
-import { ongoingProjects } from '@data/projectsData';
+import { homepageProjects } from '@data/projectsData';
 
-const OngoingProjects = () => {
+const HomeProjectSection = () => {
   return (
     <Section 
       className="bg-white"
@@ -27,8 +27,8 @@ const OngoingProjects = () => {
                {/* Large Project Image */}
                <div className="relative h-88 overflow-hidden">
                  <OptimizedImage 
-                   src={ongoingProjects[0].image} 
-                   alt={ongoingProjects[0].name}
+                   src={homepageProjects[0].image} 
+                   alt={homepageProjects[0].name}
                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                    sizes="(max-width: 768px) 100vw, 50vw"
                  />
@@ -37,20 +37,20 @@ const OngoingProjects = () => {
                  {/* Category Badge */}
                  <div className="absolute top-6 left-6">
                    <span className="bg-white bg-opacity-90 backdrop-blur-sm text-primary text-sm font-semibold px-4 py-2 rounded-full">
-                     {ongoingProjects[0].category}
+                     {homepageProjects[0].category}
                    </span>
                  </div>
                  
                  {/* Project Info Overlay */}
                  <div className="absolute bottom-6 left-6 right-6 text-white">
                    <h3 className="text-2xl text-primary font-bold mb-2  transition-colors duration-300">
-                     {ongoingProjects[0].name}
+                     {homepageProjects[0].name}
                    </h3>
                    <p className="text-white/60 text-sm leading-relaxed mb-4">
-                     {ongoingProjects[0].description}
+                     {homepageProjects[0].description}
                    </p>
                    <Button
-                     to={ongoingProjects[0].link}
+                     to={homepageProjects[0].link}
                      variant="outline"
                      size="sm"
                    >
@@ -62,7 +62,7 @@ const OngoingProjects = () => {
 
              {/* Two Smaller Projects */}
              <div className="space-y-6">
-               {ongoingProjects.slice(1, 3).map((project, index) => (
+               {homepageProjects.slice(1, 3).map((project, index) => (
                  <div 
                    key={project.id}
                    className="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden animate-fade-in-delay-2"
@@ -112,7 +112,7 @@ const OngoingProjects = () => {
 
            {/* Row 2 - Three Equal Projects */}
            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-             {ongoingProjects.slice(3, 6).map((project, index) => (
+             {homepageProjects.slice(3, 6).map((project, index) => (
                <div 
                  key={project.id}
                  className="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden animate-fade-in-delay-2"
@@ -197,4 +197,4 @@ const OngoingProjects = () => {
   );
 };
 
-export default OngoingProjects;
+export default HomeProjectSection;
