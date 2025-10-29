@@ -17,3 +17,5 @@ export const ResidentialProjects = lazy(() =>
   import("../pages/residential-projects/ResidentialProjects")
 );
 export const NotFound = lazy(() => import("../pages/not-found/NotFound"));
+export const PrivacyPolicy = lazy(() => import("../pages/privacy-policy/PrivacyPolicy"));
+export const TermsConditions = lazy(() => import("../pages/terms-conditions/TermsConditions"));

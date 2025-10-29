@@ -2,7 +2,7 @@ import React from 'react';
 
 const Loader = () => {
   return (
-    <div className="flex justify-center items-center min-h-[300px] w-full">
+    <div className="flex justify-center items-center min-h-screen w-full">
       <div className="flex flex-col items-center gap-6">
         {/* Main spinner with gradient and shadow */}
         <div className="relative">

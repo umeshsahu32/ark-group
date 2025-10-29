@@ -27,6 +27,11 @@ import completedProject5 from "@assets/projects/completed/project-5.jpg";
 import completedProject6 from "@assets/projects/completed/project-6.jpg";
 import completedProject7 from "@assets/projects/completed/project-7.jpg";
 
+import infraProject1 from "@assets/projects/infra/project-1.jpg";
+import infraProject2 from "@assets/projects/infra/project-2.jpg";
+import infraProject3 from "@assets/projects/infra/project-3.jpg";
+import infraProject4 from "@assets/projects/infra/project-4.jpg";
+
 export const homepageProjects = [
   {
     id: 1,
@@ -159,7 +164,8 @@ export const completedProjects = [
     name: "Ark Homes",
     image: completedProject2,
     category: "Residential",
-    description: "A Home to 500+ Happy Families - Ark Homes is a gated community where neighbours have a strong sense of belonging. It's just 5 mins drive from MMTS. A fully equipped clubhouse with a Gym, Swimming Pool, Grocery store ensure you don’t need to step out for essentials.",
+    description:
+      "A Home to 500+ Happy Families - Ark Homes is a gated community where neighbours have a strong sense of belonging. It's just 5 mins drive from MMTS. A fully equipped clubhouse with a Gym, Swimming Pool, Grocery store ensure you don’t need to step out for essentials.",
     link: "/modern-villa-community",
     location: "Kompally Bolarum",
     bhk: "2 &3 BHK",
@@ -194,7 +200,8 @@ export const completedProjects = [
     name: "Ark Serene County",
     image: completedProject5,
     category: "Residential",
-    description: "Homes designed and built taking every member of your family into consideration. With roads on all four sides, an AC gym, Banquet Hall, double height lobby and rooftop infinity pool, Hamptons is the place where you find a little something you love.",
+    description:
+      "Homes designed and built taking every member of your family into consideration. With roads on all four sides, an AC gym, Banquet Hall, double height lobby and rooftop infinity pool, Hamptons is the place where you find a little something you love.",
     link: "/modern-villa-community",
     location: "Whitefield, Bangalore",
     bhk: "2 & 3 BHK",
@@ -289,5 +296,92 @@ export const upcomingProjects = [
     description: "Luxury waterfront homes with private beach access",
     link: "/waterfront-residences",
     location: "Vanasthalipuram, Hyderabad",
+  },
+];
+
+export const infraProjects = [
+  {
+    id: 26,
+    name: "Infra Projects",
+    image: infraProject1,
+    description: "Comprehensive infrastructure development projects spanning government buildings, public works, and administrative facilities. Our infrastructure projects encompass state-of-the-art construction for governmental organizations, public utilities, and strategic installations. We deliver robust, sustainable infrastructure solutions that serve communities and support national development initiatives.",
+    projectList: [
+      "TTD, Tirupati",
+      "R&B, Hyderabad",
+      "GHMC, Hyderabad",
+      "Panchayat Raj Dept.",
+      "Greenrich Highlands",
+      "Dept. of Atomic Energy, GOI, Mumbai",
+      "NISIET, Dept. of SSI, Government of India",
+      "Ashoka Developers & Builders Ltd, Hyderabad",
+      "Board of Intermediate Education, Andhra Pradesh",
+      "Directorate of Construction Services & Estate Management",
+      "Atomic Minerals Division, Department of Atomic Energy, Government of India",
+    ],
+  },
+  {
+    id: 27,
+    name: "Industrial Projects",
+    image: infraProject2,
+    description: "State-of-the-art industrial facilities and manufacturing plants for leading corporations and defense sectors. Our industrial projects include advanced aerospace manufacturing units, steel plants, automotive facilities, and specialized industrial complexes. We build world-class industrial infrastructure that meets international standards for production, safety, and operational efficiency.",
+    projectList: [
+      "JBM Group, Gurgaon",
+      "ARC International, GOI",
+      "Decathlon Sports Ltd",
+      "NFC, Hyderabad",
+      "Schneider Electric, Hyderabad",
+      "Heavy Water Board, Mumbai",
+      "TATA Sikorsky Aerospace Limited",
+
+      "TATA Boeing Aerospace Limited (TBAL)",
+      "TATA Lockheed Martin Aerostructures Limited",
+      "Mahindra Ugine Steel Co. Ltd. (Mahindra Group)",
+      "TATA Boeing Aerospace Ltd, Hyderabad",
+      "TATA Advance Systems Limited (TASL)",
+      "TATA Advanced Systems Limited Center of Excellence (TCOE)",
+      "TATA Institute of Social Sciences, Hyderabad",
+      "Suguna Poultry Farms Ltd, Coimbatore",
+      "Bharat Dynamics Ltd, Bhanur, Medak Dist.",
+      "Team Asia Semi Conductors Ltd, Hyderabad",
+      "Food Corporation of India, Hyderabad",
+     
+    ],
+  },
+  {
+    id: 28,
+    name: "Residential Projects",
+    image: infraProject3,
+    description: "Premium residential developments and multi-unit housing complexes designed for modern living. Our residential portfolio includes luxury apartments, gated communities, and mixed-use developments that combine comfort with sustainability. Each project is crafted with attention to detail, offering residents exceptional quality of life and contemporary amenities.",
+    projectList: [
+      "Terminus The Pointe",
+      "Konkan Railway, Goa",
+      "Navanami - Krinss Villas",
+      "All India Industrial Exhibition (AIIE)",
+      "Anadha Vidyarthi Griha, Hyderabad",
+      "Lumbini Constructions - SLN Springs",
+      "Sahasram Developers - The Ananda",
+      "Dravidian University, Kuppam, Andhra Pradesh",
+      "Ram Woods for Lumbini Constructions, Bangalore",
+      "Earthquake Rehabilitation Project, Government of Maharashtra",
+      "Central Public Works Dept., Hyderabad",
+      "ITC Limited, Paperboards & Speciality, Papers Division, Bhadrachalam",
+
+    ],
+  },
+  {
+    id: 29,
+    name: "Institutional Projects",
+    image: infraProject4,
+    description: "Educational institutions and institutional buildings that foster learning and excellence. Our institutional projects include engineering colleges, schools, academies, and educational facilities designed to create inspiring learning environments. We construct modern academic spaces that support innovation, collaboration, and academic achievement with world-class infrastructure.",
+    projectList: [
+      "Vasavi Educational Society",
+      "Sagar Group of Institutions",
+      "Pullela Gopichand Badminton Academy",
+      "Vasavi Academy of Education, Hyderabad",
+      "Arora Engineering College, Hyderabad",
+      "Sri Venkateshwara Engineering College Suryapet",
+      "Katragadda Innovative Trust for Education, Hyderabad",
+      "Karshak Vidya Parishad, Hyderabad",
+    ],
   },
 ];

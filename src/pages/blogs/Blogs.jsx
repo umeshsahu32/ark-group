@@ -1,9 +1,12 @@
-const Blogs = ()=>{
-    return (
-      <div>
-        <h1>Blogs</h1>
-      </div>
-    )
-  }
-  
-  export default Blogs;
+import React from 'react';
+import BlogsBanner from './components/BlogsBanner';
+
+const Blogs = () => {
+  return (
+    <div className="min-h-screen">
+      <BlogsBanner />
+    </div>
+  );
+};
+
+export default Blogs;

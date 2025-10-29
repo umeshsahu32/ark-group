@@ -8,12 +8,12 @@ const Header = () => {
     { name: 'About Us', path: '/about-us' },
     { name: 'Ark Agro', path: '/ark-agro' },
     { name: 'Ark Foundation', path: '/ark-foundation' },
-    { name: 'Blogs', path: '/blogs' },
-    { name: 'Careers', path: '/careers' },
-    { name: 'Contact Us', path: '/contact-us' },
+    { name: 'Residential Projects', path: '/residential-projects' },
     { name: 'Infra Projects', path: '/infra-projects' },
+    { name: 'Careers', path: '/careers' },
     { name: 'Media', path: '/media' },
-    { name: 'Residential Projects', path: '/residential-projects' }
+    { name: 'Blogs', path: '/blogs' },
+    { name: 'Contact Us', path: '/contact-us' },
   ];
 
   return (

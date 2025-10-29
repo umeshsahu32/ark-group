@@ -11,6 +11,8 @@ import {
   Media,
   ResidentialProjects,
   NotFound,
+  PrivacyPolicy,
+  TermsConditions,
 } from "./index";
 import Layout from "../layout";
 
@@ -29,6 +31,8 @@ const AppRouter = createBrowserRouter([
       { path: "/infra-projects", element: <InfraProjects /> },
       { path: "/media", element: <Media /> },
       { path: "/residential-projects", element: <ResidentialProjects /> },
+      { path: "/privacy-policy", element: <PrivacyPolicy /> },
+      { path: "/terms-conditions", element: <TermsConditions /> },
       { path: "*", element: <NotFound /> },
     ],
   },

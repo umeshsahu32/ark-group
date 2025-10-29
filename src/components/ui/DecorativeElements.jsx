@@ -25,7 +25,7 @@ const DecorativeElements = ({
         <div
           key={index}
           className={`absolute ${element.position} ${element.size} ${
-            variant === 'background' ? element.color : `bg-gradient-to-r ${element.color}`
+            variant === 'background' ? element.color : `bg-linear-to-r ${element.color}`
           } ${
             variant === 'background' ? element.animation : `rounded-full ${element.animation}`
           } ${className}`}
