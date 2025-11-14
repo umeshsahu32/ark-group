@@ -29,7 +29,7 @@ const ManagementTeam = () => {
   };
 
   return (
-    <Section className="py-12 sm:py-16 lg:py-20 bg-linear-to-br from-gray-50 to-white relative overflow-hidden">
+    <Section className="bg-linear-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Background Elements */}
       <BackgroundElements
         variant="minimal"

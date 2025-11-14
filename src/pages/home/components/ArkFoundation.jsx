@@ -23,7 +23,7 @@ const ArkFoundation = () => {
 
   return (
     <Section 
-      className="py-12 bg-linear-to-br from-blue-50 to-purple-50"
+      className="bg-linear-to-br from-blue-50 to-purple-50"
       backgroundVariant="default"
       backgroundOpacity="opacity-10"
     >

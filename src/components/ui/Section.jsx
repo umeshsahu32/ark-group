@@ -10,7 +10,7 @@ const Section = ({
   relative = true
 }) => {
   return (
-    <section className={`py-20 ${className} ${relative ? 'relative overflow-hidden' : ''}`}>
+    <section className={`py-10 ${className} ${relative ? 'relative overflow-hidden' : ''}`}>
       {relative && (
         <BackgroundElements 
           variant={backgroundVariant} 

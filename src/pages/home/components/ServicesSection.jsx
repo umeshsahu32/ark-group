@@ -7,7 +7,7 @@ import { servicesData } from '@data/servicesData';
 const ServicesSection = () => {
   return (
     <Section 
-      className="py-24 bg-linear-to-br from-gray-50 to-white"
+      className="bg-linear-to-br from-gray-50 to-white"
       backgroundVariant="default"
     >
         {/* Section Header */}

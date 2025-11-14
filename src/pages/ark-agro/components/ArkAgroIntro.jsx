@@ -49,7 +49,7 @@ const ArkAgroIntro = () => {
   ];
 
   return (
-    <Section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-green-50 to-emerald-100 relative overflow-hidden">
+    <Section className="bg-linear-to-br from-green-50 to-emerald-100 relative overflow-hidden">
       {/* Background Elements */}
       <BackgroundElements
         variant="agro"

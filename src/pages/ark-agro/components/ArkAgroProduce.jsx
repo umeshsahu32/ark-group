@@ -66,7 +66,7 @@ const ArkAgroProduce = () => {
   ];
 
   return (
-    <Section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-white to-green-50 relative overflow-hidden">
+    <Section className="bg-linear-to-br from-white to-green-50 relative overflow-hidden">
       {/* Background Elements */}
       <BackgroundElements
         variant="agro"

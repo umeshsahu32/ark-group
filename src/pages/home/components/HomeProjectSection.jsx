@@ -20,7 +20,7 @@ const HomeProjectSection = () => {
         />
 
          {/* Projects Grid - Dynamic Layout */}
-         <div className="space-y-8 mb-12">
+         <div className="space-y-8 mb-6">
            {/* Row 1 - Large Featured Project */}
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
              <div className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden animate-fade-in-delay-2">

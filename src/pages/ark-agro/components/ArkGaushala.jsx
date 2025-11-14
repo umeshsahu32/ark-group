@@ -38,7 +38,7 @@ const ArkGaushala = () => {
   ];
 
   return (
-    <Section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-amber-50 to-orange-100 relative overflow-hidden">
+    <Section className="bg-linear-to-br from-amber-50 to-orange-100 relative overflow-hidden">
       {/* Background Elements */}
       <BackgroundElements
         variant="agro"
