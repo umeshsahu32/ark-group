@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@components/ui/Button';
 import SectionHeader from '@components/ui/SectionHeader';
 import Section from '@components/ui/Section';
+import SectionDivider from '@components/ui/SectionDivider';
 import { servicesData } from '@data/servicesData';
 
 const ServicesSection = () => {
@@ -65,6 +66,9 @@ const ServicesSection = () => {
             Explore Our Expertise
           </Button>
         </div>
+
+        {/* Decorative Bottom Element */}
+        <SectionDivider />
     </Section>
   );
 };

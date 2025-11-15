@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "@components/ui/Section";
 import SectionHeader from "@components/ui/SectionHeader";
+import SectionDivider from "@components/ui/SectionDivider";
 import Button from "@components/ui/Button";
 import OptimizedImage from "@components/ui/OptimizedImage";
 import { FaHandshake, FaGraduationCap, FaChartLine, FaEye, FaBullseye } from 'react-icons/fa';
@@ -143,6 +144,9 @@ const ArkReflections = () => {
           Visit Ark Reflections IAS
         </Button>
       </div>
+
+      {/* Decorative Bottom Element */}
+      <SectionDivider />
     </Section>
   );
 };

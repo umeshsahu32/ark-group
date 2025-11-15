@@ -6,10 +6,10 @@ const Header = () => {
   const menuItems = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about-us' },
-    { name: 'Ark Agro', path: '/ark-agro' },
-    { name: 'Ark Foundation', path: '/ark-foundation' },
     { name: 'Residential Projects', path: '/residential-projects' },
     { name: 'Infra Projects', path: '/infra-projects' },
+    { name: 'Ark Foundation', path: '/ark-foundation' },
+    { name: 'Ark Agro', path: '/ark-agro' },
     { name: 'Careers', path: '/careers' },
     { name: 'Media', path: '/media' },
     { name: 'Blogs', path: '/blogs' },

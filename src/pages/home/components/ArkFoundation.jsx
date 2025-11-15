@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SectionHeader from "@components/ui/SectionHeader";
 import Button from "@components/ui/Button";
 import Section from "@components/ui/Section";
+import SectionDivider from "@components/ui/SectionDivider";
 import OptimizedImage from "@components/ui/OptimizedImage";
 import { 
   foundationImages, 
@@ -208,6 +209,9 @@ const ArkFoundation = () => {
             </div>
           </div>
         </div>
+
+        {/* Decorative Bottom Element */}
+        <SectionDivider />
     </Section>
   );
 };

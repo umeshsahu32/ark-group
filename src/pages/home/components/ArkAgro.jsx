@@ -2,6 +2,7 @@ import React from "react";
 import SectionHeader from "@components/ui/SectionHeader";
 import Button from "@components/ui/Button";
 import Section from "@components/ui/Section";
+import SectionDivider from "@components/ui/SectionDivider";
 import OptimizedImage from "@components/ui/OptimizedImage";
 import { arkAgroProducts, arkAgroMission } from "@data/arkAgroData";
 import { FaStar, FaAppleAlt, FaCarrot, FaLeaf } from 'react-icons/fa';
@@ -145,6 +146,9 @@ const ArkAgro = () => {
           );
         })}
       </div>
+
+      {/* Decorative Bottom Element */}
+      <SectionDivider />
     </Section>
   );
 };

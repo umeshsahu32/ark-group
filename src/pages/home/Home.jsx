@@ -11,6 +11,7 @@ import OurClient from './components/OurClient';
 import ArkFoundation from './components/ArkFoundation';
 import ArkAgro from './components/ArkAgro';
 import ArkReflections from './components/ArkReflections';
+import LeadershipLegacy from './components/LeadershipLegacy';
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       {/* Uncomment the line below and comment out the line above to use the variant: */}
       <HeroSectionVariant />
       <AboutUs />
+      <LeadershipLegacy />
       <HomeProjectSection />
       <ServicesSection />
       <OurClient />
